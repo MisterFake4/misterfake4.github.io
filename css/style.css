@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1000px;
+    height: 100vh;
+    /* background-color: palevioletred; */
+     margin: 0 auto; /*расположило контейнера посередине */
+}
+
+.gallery-name{
+    text-align: center; /*текст по центру*/
+    color:rgb(255, 0, 166);
+    padding-top: 20px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around; /*расположение картинок*/
+    margin-top: 20px;
+}
+
+.gallery_item{
+    width: 100px;
+    height: 100px;
+}
+/* нормальное изображение на телефонах */
+@media screen and (max-width: 390px){
+    .container{
+        /* background:red; */   /* фон меняется при маленьком расширении */ 
+    }
+    .gallery{
+        flex-direction: column; /*картинки встают в колонну при мальньком расширении*/
+        align-items: center; /*картинки по центру*/
+    }
+    .gallery_item{
+        margin-top: 20px; /*расстояние между картинками когда они встают в колонну*/
+    }
+}
+/* сделать 4 главы в html */
